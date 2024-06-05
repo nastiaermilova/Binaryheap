@@ -21,7 +21,7 @@
 - heapify_down(index): Перестраивает кучу вниз, чтобы сохранить свойства кучи после удаления элемента.
 
 ## Использование
-ruby
+```ruby
 pq = PriorityQueueHeap.new
 pq.push(3)
 pq.push(5)
@@ -29,12 +29,12 @@ pq.push(7)
 puts pq.top  # Вывод: 3
 pq.pop
 puts pq.top  # Вывод: 5
-puts pq.size  # Вывод: 2
+puts pq.size  # Вывод: 2```
 
 ## Функция read_words_from_file
 Этот код также содержит функцию read_words_from_file, которая читает слова из файла и добавляет их в приоритетную очередь. Она принимает имя файла, массив для сохранения слов и объект приоритетной очереди.
-ruby
+```ruby
 words = []
 pq = PriorityQueueHeap.new
 read_words_from_file("filename.txt", words, pq)
-puts pq.top  # Вывод: слово с наивысшим приоритетом из файла
+puts pq.top  # Вывод: слово с наивысшим приоритетом из файла```
